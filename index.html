@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoshiscape</title>
+    <script defer src="./script/script.js"></script>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="game-title">Yoshiscape</h1>
+        <section id="game-explanation">
+            <p>You are a chicken nugget running away from Yoshi's clones.</p>
+            <p>Choose a difficulty and survive for 30 seconds without getting hit 3
+                times.</p>
+        </section>
+    </header>
+    <button id="playButton">Play</button>
+    <button id="easyButton">Easy</button>
+    <button id="mediumButton">Medium</button>
+    <button id="hardButton">Hard</button>
+
+    <button id="pauseButton" style="display:none;">Pause</button>
+    <div id="canvas">
+        <div id="timer">Time left: 30 seconds</div>
+        <div id="lives">Lives: 3</div>
+        <img id="player" src="assets/treat.png" alt="Player">
+        <img id="yoshi1" class="enemies" src="assets/yoshi.png" alt="Yoshi Clone">
+        <img id="yoshi2" class="enemies" src="assets/yoshi.png" alt="Yoshi Clone">
+        <img id="yoshi3" class="enemies" src="assets/yoshi.png" alt="Yoshi Clone">
+    </div>
+    <section id="scoreboard">
+        
+    </section>
+    <div id="overlay" class="overlay">
+        <div class="message">
+            <h2 id="messageText"></h2>
+            <button id="resetButton">Reset</button>
+        </div>
+    </div>
+</body>
+
+</html>
